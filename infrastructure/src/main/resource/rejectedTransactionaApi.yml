@@ -29,7 +29,7 @@ paths:
               $ref: '#/components/schemas/TransactionBookingRequest'
       responses:
         '200':
-          description: Accepted. CDIS Box Permission List received successfully
+          description: Rejected Transactions recieved successfully
           content:
             application/json:
               schema:
@@ -170,10 +170,10 @@ components:
       properties:
         timestamp:
           description: Time Stamp of the request
-          type: date
+          type: string
         statusCode:
           description: HTTP Status Code of the request
-          type: int
+          type: integer
         message:
           description: Description of the error to be used for debugging. Not suitable to show to an enduser.
           type: string
